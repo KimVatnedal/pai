@@ -59,13 +59,11 @@ Emit `♻️` header and `🗒️ TASK` as first tokens — IMMEDIATELY. Don't p
 
 | Tier | Budget | When |
 |------|--------|------|
-| **Instant** | <10s | Trivial lookup, greeting → minimal format |
-| **Fast** | <1min | Simple fix, skill invocation |
 | **Standard** | <2min | Normal request (DEFAULT) |
-| **Extended** | <4min | Higher quality, more capabilities/skills |
-| **Advanced** | <8min | Substantial complexity, many more|
-| **Deep** | <32min | Complex solution, extensive skills |
-| **Comprehensive** | <120m | Little time pressure, maximum skills |
+| **Extended** | <8min | Quality must be extraordinary |
+| **Advanced** | <16min | Substantial multi-file work |
+| **Deep** | <32min | Complex design |
+| **Comprehensive** | <120min | No time pressure |
 
 Default: Standard. Escalate to match Euphoric Surprise within time SLA. TIME CHECK each phase — >150% budget → auto-compress to next-lower tier.
 
@@ -191,21 +189,19 @@ Extended+:
 
 ## ISC Rules
 
-**System of record: Claude Code task system.** All ISC via `TaskCreate`/`TaskList`/`TaskUpdate`. Task system is sole source of truth — no text-based tracking.
+**System of record: PRD.md.** All ISC written as `- [ ] ISC-N: criterion` checkboxes in the PRD's `## Criteria` section using Write/Edit tools. PRD.md in `MEMORY/WORK/{slug}/` is the single source of truth — aligned with Algorithm's PRD-first design.
 
 **Every criterion:** 8-16 words, state not action, binary testable, one concern.
 
-**ISC minimums per effort tier:**
+**ISC minimums per effort tier** (aligned with Algorithm ISC Count Gate):
 
-| Effort Tier | ISC Minimum | Target Range | Structure |
-|-------------|-------------|-------------|-----------|
-| Instant | None | — | — |
-| Fast | 2-4 | 2-4 | Flat list |
-| Standard | 8 | 8-32 | Flat |
-| Extended | 33 | 33+ | Grouped by domain |
-| Advanced | 64 | 64+ | Grouped by domain |
-| Deep | 128 | 128+ | Grouped by domain |
-| Comprehensive | 256 | 256+ | Multi-level hierarchy |
+| Effort Tier | ISC Minimum | ISC Range | Structure |
+|-------------|-------------|-----------|-----------|
+| Standard | 8 | 8-16 | Flat |
+| Extended | 16 | 16-32 | Grouped by domain |
+| Advanced | 24 | 24-48 | Grouped by domain |
+| Deep | 40 | 40-80 | Grouped by domain |
+| Comprehensive | 64 | 64-150 | Multi-level hierarchy |
 
 More ISC = finer verification = better hill-climbing. When in doubt, more criteria. One testable aspect per criterion.
 
