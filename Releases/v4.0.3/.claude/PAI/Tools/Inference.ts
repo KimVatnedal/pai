@@ -82,6 +82,7 @@ export async function inference(options: InferenceOptions): Promise<InferenceRes
 
     const args = [
       '--print',
+      '--no-session-persistence',  // Prevents ghost sessions accumulating in --resume list
       '--model', config.model,
       '--tools', '',  // Disable tools for faster response
       '--output-format', 'text',
